@@ -1,0 +1,106 @@
+/* BASE STYLES ------------------------ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #777;
+}
+
+/* FOOTER ------------------------ */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #efefef;
+  justify-content: center;
+  border-top: 1px solid #777;
+}
+
+.footer { 
+  width: 60%;
+  margin: 1em;
+}
+  /* CONTENT ------------------------ */
+.content {
+  display: flex;
+  width: 100%;
+  line-height: 1.4em;
+  padding: 1em 0 2em 0;
+}
+    /* DROPDOWN ------------------------ */
+.dropdown {
+  width: auto;
+  padding-right: 5em;
+}
+
+.dropdown select {
+  margin-bottom: 0.4em;
+  width: 100%;
+  color: #555;
+  font-size: 1.3em;
+  padding: 0.5em;
+}
+    /* ITEMS ------------------------ */
+.items {
+  display: flex;
+  width: 90%;
+}
+
+.item {
+  width: 33.33%;
+}
+
+.item-title {
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 0.5em;
+}
+
+  /* COPYRIGHT ------------------------ */
+.copyright {
+  display: flex;
+  color: #777;
+  width: 100%;
+  padding: 2em 0;
+}
+
+.logo {
+  align-self: flex-start;
+  width: 25%;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 75%;
+}
+
+.social a {
+  margin: 0 0.4em;
+}
+
+.social i {
+  color: #777;
+  margin: 0 0.4em;
+}
+
+/* MEDIA QUERIES ------------------- */
+@media (max-width: 1024px) {
+  .dropdown select {
+    font-size: 1em;
+  }
+}

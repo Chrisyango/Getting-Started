@@ -1,0 +1,17 @@
+/* COLORS ------------------------ */
+$primary-color: #fff;
+$text-color: #333;
+
+/* MIXINS --------------------- */
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin bold {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+}

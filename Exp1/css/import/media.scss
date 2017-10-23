@@ -1,0 +1,42 @@
+/* MEDIA QUERIES -------------------- */
+@media (max-width: 1024px) {
+	.header-description {
+		height: 20%;
+		h2 {
+			height: 30%;
+			font-size: 1.2em;
+		}
+		h1 {
+			height: 50%;
+			font-size: 2.5em;
+		}
+		p {
+			height: 20%;
+			font-size: 0.8em;
+		}
+	}
+}
+
+@media (max-width: 670px) {
+	.header-description {
+		height: 30%;
+		h2 {
+			height: 20%;
+			font-size: 1.2em;
+		}
+		h1 {
+			height: 30%;
+			font-size: 2em;
+		}
+		p {
+			height: 30%;
+		}
+	}
+	.item {
+		p {
+			width: 100%;
+			text-align: center;
+			@include bold;
+		}
+	}
+}

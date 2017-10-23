@@ -1,0 +1,116 @@
+/* BASE STYLES ---------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Lato', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+.container{
+  display:flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/* SIGN UP -------------------- */
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 4em 0;
+  background-color: #6d9dc5;
+}
+
+.signup-content {
+  width: 60%;
+}
+
+.signup-content h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.signup-content p {
+  text-align: center;
+}
+
+.signup-content form {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em auto;
+}
+
+.signup-content input[type="text"] {
+  font-size: 0.9em;
+  padding: 1em 0.5em;
+  width: 23%;
+  border: none;
+  border-radius: 20px;
+}
+
+.signup-content input[type="submit"] {
+  font-size: 0.9em;
+  padding: 1em 0.5em;
+  width: 23%;
+  background-color: tomato;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-content input[type="submit"]:hover {
+  background-color: #c52233;
+  color: #fff;
+}
+
+/* MEDIA QUERIES --------------------- */
+@media (max-width: 1024px) {
+  .signup-content {
+    width: 80%;
+  }
+  .signup-content h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .signup-content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  .signup {
+  padding: 1.5em 0;
+}
+  .signup-content h2 {
+    font-size: 1.2em;
+  }
+  .signup-content p {
+    font-size: 0.8em;
+  }
+  .signup-content form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em auto;
+  }
+  .signup-content input[type="text"] {
+    text-align: center;
+    width: 70%;
+    margin-bottom: 1.5em;
+  }
+  .signup-content input[type="submit"] {
+    width: 70%;
+  }
+}

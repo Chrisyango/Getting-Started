@@ -1,0 +1,30 @@
+/* BASE STYLES ---------------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Arvo", serif;
+  background-color: $primary-color;
+}
+
+.container {
+  @include flex;
+  width: 100%;
+  height: 100vh;
+  color: $text-color;
+  .content {
+    @include flex;
+    width: 70%;
+    height: 100%;
+    background-color: $primary-color;
+  }
+  .image {
+    background-image: url("https://newevolutiondesigns.com/images/freebies/city-wallpaper-47.jpg");
+    width: 30%;
+    height: 100%;
+  }
+}
